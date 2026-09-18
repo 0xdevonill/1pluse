@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+:root {
+  --nivo-bg: #06070a;
+  --nivo-bg-soft: #0b0d12;
+  --nivo-elevated: #10131b;
+  --nivo-gold: #c9a36a;
+  --nivo-gold-bright: #ead7b3;
+  --nivo-teal: #7ec8c0;
+  --nivo-mist: #a9b4c4;
+  --nivo-line: rgba(233, 221, 196, 0.12);
+  --nivo-glow: rgba(201, 163, 106, 0.22);
+}
+
+@theme inline {
+  --color-background: var(--nivo-bg);
+  --color-foreground: #f4efe6;
+  --color-nivo-bg: var(--nivo-bg);
+  --color-nivo-bg-soft: var(--nivo-bg-soft);
+  --color-nivo-elevated: var(--nivo-elevated);
+  --color-nivo-gold: var(--nivo-gold);
+  --color-nivo-gold-bright: var(--nivo-gold-bright);
+  --color-nivo-teal: var(--nivo-teal);
+  --color-nivo-mist: var(--nivo-mist);
+  --color-nivo-line: var(--nivo-line);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--nivo-bg);
+}
+
+body {
+  background:
+    radial-gradient(1200px 700px at 50% -10%, rgba(201, 163, 106, 0.12), transparent 55%),
+    radial-gradient(900px 500px at 100% 20%, rgba(126, 200, 192, 0.06), transparent 50%),
+    radial-gradient(800px 500px at 0% 80%, rgba(201, 163, 106, 0.05), transparent 45%),
+    var(--nivo-bg);
+  color: #f4efe6;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  min-height: 100%;
+}
+
+::selection {
+  background: rgba(201, 163, 106, 0.28);
+  color: #fff8ec;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 163, 106, 0.35) transparent;
+}
+
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #f4e6c8 0%, #c9a36a 55%, #8d6a3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(10, 12, 18, 0.62);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(233, 221, 196, 0.1);
+}
+
+.glass-soft {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(233, 221, 196, 0.1);
+}
+
+.hairline {
+  background: linear-gradient(90deg, transparent, rgba(201, 163, 106, 0.45), transparent);
+  height: 1px;
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(rgba(201, 163, 106, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 163, 106, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 15%, transparent 75%);
+}
+
+.glow-orb {
+  background: radial-gradient(circle, var(--nivo-glow), transparent 68%);
+  filter: blur(8px);
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes check-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 6 10;
+  animation: dash-flow 8s linear infinite;
+}
+
+.animate-slow-spin {
+  animation: slow-spin 28s linear infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 4.5s ease-in-out infinite;
+}
+
+.animate-float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 247, 230, 0.16), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-dash,
+  .animate-slow-spin,
+  .animate-pulse-soft,
+  .animate-float-y,
+  .shimmer {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-dash {
+    animation-duration: 14s;
+  }
+
+  .animate-slow-spin {
+    animation-duration: 48s;
+  }
+}
