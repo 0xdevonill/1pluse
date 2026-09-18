@@ -8,7 +8,7 @@ export function PromiseSection() {
       <Container>
         <Reveal>
           <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-nivo-gold">
-            The NIVO Promise
+            The NIVO FAMILY Promise
           </p>
           <h2 className="mt-6 max-w-4xl font-serif text-4xl leading-[1.05] md:text-6xl">
             We don&apos;t want to hide the person behind the meme.
@@ -17,7 +17,7 @@ export function PromiseSection() {
             We want you to know who launched it.
           </p>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-white/55">
-            NIVO is being built to make meme-token launches more transparent, understandable and
+            NIVO FAMILY is being built to make meme-token launches more transparent, understandable and
             creator-driven.
           </p>
         </Reveal>

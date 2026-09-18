@@ -32,7 +32,7 @@ export function TokenStory() {
           <SectionHeading
             eyebrow="Token Story System"
             title="Every Token Has a Story."
-            description="Every token launched through NIVO should have a creator-written story — so the idea is not lost behind a ticker."
+            description="Every token launched through NIVO FAMILY should have a creator-written story — so the idea is not lost behind a ticker."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 md:grid-cols-5">

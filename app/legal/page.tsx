@@ -4,11 +4,11 @@ export default function LegalPage() {
   return (
     <LegalLayout title="Legal">
       <p>
-        NIVO is an independent project and is not affiliated with or endorsed by Robinhood or
+        NIVO FAMILY is an independent project and is not affiliated with or endorsed by Robinhood or
         Solana.
       </p>
       <p>
-        All token launches involve risk. Information displayed by NIVO is intended to improve
+        All token launches involve risk. Information displayed by NIVO FAMILY is intended to improve
         transparency and does not constitute financial advice or a guarantee of value or
         performance.
       </p>

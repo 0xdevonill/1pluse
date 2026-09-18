@@ -37,7 +37,7 @@ export function ThreeStepExperience() {
           <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-nivo-gold">
             The 3-Step Product Experience
           </p>
-          <h2 className="mt-4 max-w-3xl font-serif text-4xl text-[#f7f1e6] md:text-6xl">
+          <h2 className="mt-4 max-w-3xl font-serif text-4xl text-[#f4f7ff] md:text-6xl">
             Connect. Create. Verify.
           </h2>
           <p className="mt-5 max-w-2xl text-white/55">
@@ -65,7 +65,7 @@ export function ThreeStepExperience() {
             ))}
           </div>
 
-          <div className="rounded-[28px] border border-white/10 bg-[#0b0d13] p-5 md:p-8">
+          <div className="rounded-[28px] border border-white/10 bg-[#0a1020] p-5 md:p-8">
             <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p className="font-mono text-[10px] tracking-[0.24em] text-nivo-gold">
@@ -190,7 +190,7 @@ function VerifyMock() {
             "CREATOR PROFILE",
           ].map((item) => (
             <p key={item} className="flex items-center gap-2 text-nivo-teal">
-              <Check size={14} /> {item} ✓
+              <Check size={14} /> {item}
             </p>
           ))}
         </div>

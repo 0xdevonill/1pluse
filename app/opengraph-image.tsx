@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "NIVO — Verified Meme Launch Network";
+export const alt = "NIVO FAMILY — Verified Meme Launch Network";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -15,17 +15,19 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 80,
-          background: "linear-gradient(180deg, #0c0e14 0%, #06070a 100%)",
-          color: "#f4efe6",
+          background: "linear-gradient(135deg, #0a1020 0%, #040711 55%, #0b1a22 100%)",
+          color: "#f4f7ff",
         }}
       >
-        <div style={{ fontSize: 22, letterSpacing: 8, color: "#c9a36a" }}>
+        <div style={{ fontSize: 22, letterSpacing: 8, color: "#5eead4" }}>
           VERIFIED MEME LAUNCH NETWORK
         </div>
-        <div style={{ fontSize: 84, marginTop: 24, fontStyle: "italic" }}>
+        <div style={{ fontSize: 76, marginTop: 24, fontStyle: "italic" }}>
           Memes deserve an identity.
         </div>
-        <div style={{ fontSize: 32, marginTop: 28, color: "#ead7b3" }}>NIVO · Coming Soon</div>
+        <div style={{ fontSize: 32, marginTop: 28, color: "#f0c56d" }}>
+          NIVO FAMILY · Coming Soon
+        </div>
       </div>
     ),
     size,

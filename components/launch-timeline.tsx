@@ -35,7 +35,7 @@ const STEPS = [
   {
     n: "07",
     title: "PUBLISH",
-    body: "The token receives a public NIVO profile.",
+    body: "The token receives a public NIVO FAMILY profile.",
   },
   {
     n: "08",

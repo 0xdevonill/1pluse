@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { NivoMark } from "@/components/nivo-logo";
 import { Container } from "@/components/ui";
+import { BRAND } from "@/lib/constants";
 
 export function FinalCta() {
   return (
@@ -18,18 +19,16 @@ export function FinalCta() {
           >
             The next generation of meme launches starts with identity.
           </motion.h2>
-          <p className="mt-8 font-serif text-5xl tracking-[0.28em]">NIVO</p>
-          <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.24em] text-nivo-gold">
-            Verified Meme Launch Network
+          <p className="mt-8 font-serif text-4xl tracking-[0.18em] md:text-5xl">
+            {BRAND.name}
           </p>
-          <p className="mt-4 text-white/50">Coming Soon.</p>
-          <motion.div
-            className="mx-auto mt-10 w-fit"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          >
+          <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.24em] text-nivo-gold">
+            {BRAND.tagline}
+          </p>
+          <p className="mt-4 text-white/55">Coming Soon.</p>
+          <div className="mx-auto mt-10 w-fit animate-float-y">
             <NivoMark size={72} />
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

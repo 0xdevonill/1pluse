@@ -14,14 +14,14 @@ export function CreatorProfile() {
             </p>
             <h2 className="mt-4 font-serif text-4xl md:text-6xl">See the person behind the ticker.</h2>
             <p className="mt-5 max-w-xl text-white/55">
-              The badge means NIVO verified that the creator controls the connected social account
+              The badge means NIVO FAMILY verified that the creator controls the connected social account
               and wallet according to the platform&apos;s verification process. It is not government ID
               verification.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <article className="relative overflow-hidden rounded-[28px] border border-nivo-gold/25 bg-[#0c0e14] p-7 shadow-[0_0_80px_rgba(201,163,106,0.08)]">
-              <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-nivo-gold/10 blur-3xl" />
+            <article className="relative overflow-hidden rounded-[28px] border border-nivo-gold/25 bg-[#0a1020] p-7 shadow-[0_0_80px_rgba(94,234,212,0.08)]">
+              <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-nivo-teal/10 blur-3xl" />
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-4">
                   <div className="relative">
@@ -32,7 +32,7 @@ export function CreatorProfile() {
                   </div>
                   <div>
                     <p className="font-mono text-[10px] tracking-[0.24em] text-nivo-gold">
-                      NIVO CREATOR
+                      NIVO FAMILY CREATOR
                     </p>
                     <h3 className="mt-1 font-serif text-3xl">@creatorname</h3>
                   </div>

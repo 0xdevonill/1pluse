@@ -1,6 +1,13 @@
+export const BRAND = {
+  name: "NIVO FAMILY",
+  short: "NIVO",
+  tagline: "Verified Meme Launch Network",
+  handle: "@NivinFamily",
+} as const;
+
 export const LINKS = {
-  x: "https://x.com/",
-  community: "https://discord.com/",
+  x: "https://x.com/NivinFamily",
+  community: "https://x.com/NivinFamily",
 } as const;
 
 export const NAV_ITEMS = [
@@ -109,15 +116,15 @@ export const CREATOR_HISTORY = [
 
 export const FAQS = [
   {
-    q: "What is NIVO?",
-    a: "NIVO is a planned meme-token launch and discovery platform focused on creator identity, transparent token information and community discovery.",
+    q: "What is NIVO FAMILY?",
+    a: "NIVO FAMILY is a planned meme-token launch and discovery platform focused on creator identity, transparent token information and community discovery.",
   },
   {
-    q: "When will NIVO launch?",
-    a: "NIVO is currently in development. The official launch date will be announced through official channels.",
+    q: "When will NIVO FAMILY launch?",
+    a: "NIVO FAMILY is currently in development. The official launch date will be announced through official channels.",
   },
   {
-    q: "Which blockchains will NIVO support?",
+    q: "Which blockchains will NIVO FAMILY support?",
     a: "The initial concept is designed around Solana and Robinhood Chain.",
   },
   {
@@ -133,15 +140,15 @@ export const FAQS = [
     a: "The final eligibility and moderation rules will be announced before launch.",
   },
   {
-    q: "Does NIVO guarantee token safety?",
-    a: "No. NIVO should not promise that a token is safe, profitable, legitimate, or free from risk.",
+    q: "Does NIVO FAMILY guarantee token safety?",
+    a: "No. NIVO FAMILY should not promise that a token is safe, profitable, legitimate, or free from risk.",
   },
   {
-    q: "Is NIVO affiliated with Robinhood?",
-    a: "No. NIVO is an independent project and is not affiliated with or endorsed by Robinhood.",
+    q: "Is NIVO FAMILY affiliated with Robinhood?",
+    a: "No. NIVO FAMILY is an independent project and is not affiliated with or endorsed by Robinhood.",
   },
   {
-    q: "Is NIVO affiliated with Solana?",
-    a: "No. NIVO is an independent project and is not affiliated with or endorsed by Solana.",
+    q: "Is NIVO FAMILY affiliated with Solana?",
+    a: "No. NIVO FAMILY is an independent project and is not affiliated with or endorsed by Solana.",
   },
 ];

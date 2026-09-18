@@ -22,7 +22,7 @@ export function Waitlist() {
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-nivo-gold">
               Waitlist
             </p>
-            <h2 className="mt-4 font-serif text-4xl md:text-5xl">Get the NIVO launch update.</h2>
+            <h2 className="mt-4 font-serif text-4xl md:text-5xl">Get the NIVO FAMILY launch update.</h2>
             {joined ? (
               <p className="mt-8 font-serif text-3xl text-nivo-gold-bright">You&apos;re on the list.</p>
             ) : (
@@ -41,7 +41,7 @@ export function Waitlist() {
                 />
                 <button
                   type="submit"
-                  className="h-12 rounded-full bg-gradient-to-b from-[#ead7b3] to-[#c9a36a] px-6 font-mono text-[11px] tracking-[0.18em] text-[#1a140c]"
+                  className="btn-primary h-12 rounded-full px-6 font-mono text-[11px] tracking-[0.18em]"
                 >
                   JOIN WAITLIST
                 </button>
