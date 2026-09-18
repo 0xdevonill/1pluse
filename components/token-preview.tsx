@@ -19,7 +19,7 @@ export function TokenPreview() {
           <h2 className="mt-4 font-serif text-4xl md:text-6xl">A public page for every launch.</h2>
         </Reveal>
         <Reveal delay={0.08} className="mt-10">
-          <article className="overflow-hidden rounded-[28px] border border-white/10 bg-[#0b0d13]">
+          <article className="overflow-hidden rounded-[28px] border border-white/10 bg-[#0a1020]">
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/8 px-6 py-5">
               <div>
                 <div className="flex items-center gap-3">

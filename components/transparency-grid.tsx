@@ -20,7 +20,7 @@ export function TransparencyGrid() {
           <SectionHeading
             eyebrow="Transparency"
             title="Know What You're Looking At."
-            description="On-chain properties should be independently verifiable where applicable. NIVO is designed to present those signals in one place."
+            description="On-chain properties should be independently verifiable where applicable. NIVO FAMILY is designed to present those signals in one place."
           />
         </Reveal>
         <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

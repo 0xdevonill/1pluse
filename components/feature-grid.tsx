@@ -42,7 +42,7 @@ export function FeatureGrid() {
       <Container>
         <Reveal>
           <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-nivo-gold">
-            What Makes NIVO Different
+            What Makes NIVO FAMILY Different
           </p>
           <h2 className="mt-4 font-serif text-4xl md:text-6xl">Identity is the product.</h2>
         </Reveal>

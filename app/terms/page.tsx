@@ -13,7 +13,7 @@ export default function TermsPage() {
         used to explain the planned product. They are labeled as Coming Soon or Product Preview.
       </p>
       <p>
-        NIVO does not guarantee token safety, legitimacy, profitability, or performance. Social
+        NIVO FAMILY does not guarantee token safety, legitimacy, profitability, or performance. Social
         ownership verification, when launched, will confirm control of a connected account. It will
         not independently verify a person&apos;s legal identity.
       </p>

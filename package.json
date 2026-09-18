@@ -1,5 +1,5 @@
 {
-  "name": "nivo",
+  "name": "nivo-family",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,5 +25,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "NIVO — Verified Meme Launch Network. Coming soon website."
+  "description": "NIVO FAMILY — Verified Meme Launch Network. Coming soon website."
 }

@@ -20,10 +20,11 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "NIVO — Verified Meme Launch Network",
+  title: "NIVO FAMILY — Verified Meme Launch Network",
   description:
-    "NIVO is building a meme-token launch network where every token has a verified creator, a real story, and transparent ownership. Coming soon on Robinhood Chain and Solana.",
+    "NIVO FAMILY is building a meme-token launch network where every token has a verified creator, a real story, and transparent ownership. Coming soon on Robinhood Chain and Solana.",
   keywords: [
+    "NIVO FAMILY",
     "NIVO",
     "meme token",
     "creator identity",
@@ -32,15 +33,16 @@ export const metadata: Metadata = {
     "token launch",
   ],
   openGraph: {
-    title: "NIVO — Verified Meme Launch Network",
+    title: "NIVO FAMILY — Verified Meme Launch Network",
     description:
       "Memes deserve an identity. Launch meme tokens with a verified creator, a real story, and transparent ownership.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NIVO — Verified Meme Launch Network",
+    title: "NIVO FAMILY — Verified Meme Launch Network",
     description: "Memes deserve an identity. Coming soon.",
+    site: "@NivinFamily",
   },
 };
 

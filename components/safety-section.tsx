@@ -36,7 +36,7 @@ export function SafetySection() {
           <SectionHeading
             eyebrow="Visibility"
             title="Built Around Visibility."
-            description="Designed to make important information easier to verify. NIVO does not claim that tokens are rug-proof, scam-proof, guaranteed safe, or guaranteed legitimate."
+            description="Designed to make important information easier to verify. NIVO FAMILY does not claim that tokens are rug-proof, scam-proof, guaranteed safe, or guaranteed legitimate."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

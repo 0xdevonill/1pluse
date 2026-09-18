@@ -16,7 +16,7 @@ export function LegalLayout({
         <h1 className="mt-10 font-serif text-4xl md:text-5xl">{title}</h1>
         <div className="mt-8 space-y-5 text-sm leading-7 text-white/60">{children}</div>
         <Link href="/" className="mt-12 inline-block text-nivo-gold">
-          ← Back to NIVO
+          ← Back to NIVO FAMILY
         </Link>
       </div>
     </main>

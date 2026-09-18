@@ -1,78 +1,80 @@
 "use client";
 
+import { useId } from "react";
 import { motion } from "framer-motion";
 
 const NODES = [
-  { label: "CREATOR", x: 50, y: 12 },
-  { label: "X ACCOUNT", x: 86, y: 32 },
-  { label: "TOKEN", x: 86, y: 68 },
-  { label: "STORY", x: 50, y: 88 },
-  { label: "CHAIN", x: 14, y: 68 },
-  { label: "LIQUIDITY", x: 14, y: 32 },
+  { label: "CREATOR", x: 50, y: 14 },
+  { label: "X ACCOUNT", x: 84, y: 32 },
+  { label: "TOKEN", x: 84, y: 68 },
+  { label: "STORY", x: 50, y: 86 },
+  { label: "CHAIN", x: 16, y: 68 },
+  { label: "LIQUIDITY", x: 16, y: 32 },
 ];
 
 export function HeroNetworkAnimation() {
+  const reactId = useId().replace(/:/g, "");
+  const glowId = `coreGlow-${reactId}`;
+  const lineId = `lineGold-${reactId}`;
+
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[560px]">
-      <div className="glow-orb absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2" />
-      <svg viewBox="0 0 100 100" className="h-full w-full overflow-visible">
+    <div className="relative mx-auto aspect-square w-full max-w-[540px]">
+      <div className="glow-orb absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full" />
+      <svg viewBox="-8 -8 116 116" className="h-full w-full overflow-visible">
         <defs>
-          <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#EAD7B3" stopOpacity="0.95" />
-            <stop offset="55%" stopColor="#C9A36A" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#C9A36A" stopOpacity="0" />
+          <radialGradient id={glowId} cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#FFE9B8" stopOpacity="0.95" />
+            <stop offset="45%" stopColor="#F0C56D" stopOpacity="0.35" />
+            <stop offset="100%" stopColor="#5EEAD4" stopOpacity="0" />
           </radialGradient>
-          <linearGradient id="lineGold" x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor="#EAD7B3" stopOpacity="0.1" />
-            <stop offset="0.5" stopColor="#C9A36A" stopOpacity="0.85" />
-            <stop offset="1" stopColor="#7EC8C0" stopOpacity="0.2" />
+          <linearGradient id={lineId} x1="0" y1="0" x2="1" y2="1">
+            <stop stopColor="#FFE9B8" stopOpacity="0.15" />
+            <stop offset="0.5" stopColor="#F0C56D" stopOpacity="0.9" />
+            <stop offset="1" stopColor="#5EEAD4" stopOpacity="0.35" />
           </linearGradient>
         </defs>
         {NODES.map((node) => (
-          <g key={node.label}>
-            <line
-              x1="50"
-              y1="50"
-              x2={node.x}
-              y2={node.y}
-              stroke="url(#lineGold)"
-              strokeWidth="0.28"
-              className="animate-dash"
-            />
-          </g>
-        ))}
-        <circle cx="50" cy="50" r="16" fill="url(#coreGlow)" className="animate-pulse-soft" />
-        <g className="origin-center animate-slow-spin" style={{ transformBox: "fill-box", transformOrigin: "50px 50px" }}>
-          <polygon
-            points="50,38 60,44 60,56 50,62 40,56 40,44"
-            fill="rgba(8,9,12,0.7)"
-            stroke="#EAD7B3"
-            strokeWidth="0.5"
+          <line
+            key={`line-${node.label}`}
+            x1="50"
+            y1="50"
+            x2={node.x}
+            y2={node.y}
+            stroke={`url(#${lineId})`}
+            strokeWidth="0.32"
+            className="animate-dash"
           />
-        </g>
-        <circle cx="50" cy="50" r="2.1" fill="#F4E6C8" />
+        ))}
+        <circle cx="50" cy="50" r="16" fill={`url(#${glowId})`} className="animate-pulse-soft" />
+        <polygon
+          points="50,38.5 59.5,44 59.5,56 50,61.5 40.5,56 40.5,44"
+          fill="rgba(4,7,17,0.72)"
+          stroke="#FFE9B8"
+          strokeWidth="0.5"
+        />
+        <circle cx="50" cy="50" r="2.1" fill="#FFE9B8" />
         <path
           d="M45.5 50.2 L48.4 53 L55 45.8"
           fill="none"
-          stroke="#F4E6C8"
+          stroke="#FFE9B8"
           strokeWidth="0.7"
           strokeLinecap="round"
         />
         {NODES.map((node, i) => (
           <motion.g
             key={node.label}
-            animate={{ y: [0, i % 2 === 0 ? -1.2 : 1.2, 0] }}
-            transition={{ duration: 5 + i * 0.4, repeat: Infinity, ease: "easeInOut" }}
+            animate={{ y: [0, i % 2 === 0 ? -0.8 : 0.8, 0] }}
+            transition={{ duration: 6 + i * 0.3, repeat: Infinity, ease: "easeInOut" }}
           >
-            <circle cx={node.x} cy={node.y} r="2.4" fill="#0b0d12" stroke="#C9A36A" strokeWidth="0.45" />
-            <circle cx={node.x} cy={node.y} r="0.9" fill="#EAD7B3" />
+            <circle cx={node.x} cy={node.y} r="2.4" fill="#040711" stroke="#5EEAD4" strokeWidth="0.45" />
+            <circle cx={node.x} cy={node.y} r="0.9" fill="#F0C56D" />
             <text
               x={node.x}
-              y={node.y + (node.y < 50 ? -4.5 : 6.2)}
+              y={node.y + (node.y < 50 ? -5 : 6.8)}
               textAnchor="middle"
-              fill="#EAD7B3"
-              fontSize="2.3"
-              letterSpacing="0.18"
+              fill="#E8F0FF"
+              fontSize="2.4"
+              letterSpacing="0.16"
               style={{ fontFamily: "ui-monospace, monospace" }}
             >
               {node.label}
@@ -80,7 +82,7 @@ export function HeroNetworkAnimation() {
           </motion.g>
         ))}
       </svg>
-      <p className="absolute inset-x-0 bottom-2 text-center font-mono text-[9px] tracking-[0.22em] text-white/35 uppercase">
+      <p className="pointer-events-none absolute inset-x-0 -bottom-1 text-center font-mono text-[9px] tracking-[0.18em] text-white/45 uppercase sm:bottom-1">
         Creator → Verification → Token → Community
       </p>
     </div>

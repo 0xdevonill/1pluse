@@ -20,7 +20,7 @@ export function ChainSection() {
             <p className="mt-4 text-white/55">EVM-native token infrastructure</p>
             <p className="mt-6 max-w-md text-sm leading-7 text-white/45">
               Robinhood Chain is an Ethereum-compatible Layer-2 built with Arbitrum technology and
-              uses ETH for gas. NIVO plans to support token launches on this network.
+              uses ETH for gas. NIVO FAMILY plans to support token launches on this network.
             </p>
           </Reveal>
           <Reveal delay={0.08} className="bg-gradient-to-bl from-[#10201e] to-[#0a0c11] p-8 md:p-12">
@@ -29,12 +29,12 @@ export function ChainSection() {
             <p className="mt-4 text-white/55">High-performance token ecosystem</p>
             <p className="mt-6 max-w-md text-sm leading-7 text-white/45">
               Planned support for Solana token launches, with creator identity, story and public
-              profile presented in the same NIVO format.
+              profile presented in the same NIVO FAMILY format.
             </p>
           </Reveal>
         </div>
         <p className="mt-6 text-xs leading-6 text-white/35">
-          NIVO is an independent project and is not affiliated with or endorsed by Robinhood or
+          NIVO FAMILY is an independent project and is not affiliated with or endorsed by Robinhood or
           Solana.
         </p>
       </Container>
