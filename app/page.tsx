@@ -8,6 +8,7 @@ import { FeatureGrid } from "@/components/feature-grid";
 import { FinalCta } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
+import { OfficialToken } from "@/components/official-token";
 import { LaunchTimeline } from "@/components/launch-timeline";
 import { PhilosophySection } from "@/components/philosophy-section";
 import { ProblemSection } from "@/components/problem-section";
@@ -25,6 +26,7 @@ export default function Home() {
     <>
       <main id="content">
         <Hero />
+        <OfficialToken />
         <ProblemSection />
         <PhilosophySection />
         <ThreeStepExperience />
