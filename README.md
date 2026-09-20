@@ -2,7 +2,7 @@
 
 Premium coming-soon website for **NIVO FAMILY**, a planned meme-token launch and discovery platform focused on creator identity, transparent token information, and public stories.
 
-Official X: [https://x.com/NivinFamily](https://x.com/NivinFamily)
+Official X: [https://x.com/NivoFamily](https://x.com/NivoFamily)
 
 This repository is a **pre-launch marketing site**. It does not deploy tokens, connect wallets, run OAuth, or trade assets.
 
