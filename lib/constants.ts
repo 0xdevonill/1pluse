@@ -2,12 +2,12 @@ export const BRAND = {
   name: "NIVO FAMILY",
   short: "NIVO",
   tagline: "Verified Meme Launch Network",
-  handle: "@NivinFamily",
+  handle: "@NivoFamily",
 } as const;
 
 export const LINKS = {
-  x: "https://x.com/NivinFamily",
-  community: "https://x.com/NivinFamily",
+  x: "https://x.com/NivoFamily",
+  community: "https://x.com/NivoFamily",
 } as const;
 
 export const NAV_ITEMS = [

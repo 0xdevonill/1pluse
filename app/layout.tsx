@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NIVO FAMILY — Verified Meme Launch Network",
     description: "Memes deserve an identity. Coming soon.",
-    site: "@NivinFamily",
+    site: "@NivoFamily",
   },
 };
 
