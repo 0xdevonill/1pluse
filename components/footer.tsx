@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NivoLogo } from "@/components/nivo-logo";
-import { LINKS } from "@/lib/constants";
+import { LINKS, OFFICIAL_TOKEN } from "@/lib/constants";
 
 const GROUPS = [
   {
@@ -39,6 +39,17 @@ export function Footer() {
           <p className="mt-6 max-w-md text-sm leading-7 text-white/50">
             NIVO FAMILY is an independent project and is not affiliated with Robinhood or Solana.
           </p>
+          <p className="mt-4 font-mono text-[11px] tracking-[0.14em] text-white/40 uppercase">
+            Official CA
+          </p>
+          <a
+            href={OFFICIAL_TOKEN.explorer}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 block break-all font-mono text-[11px] text-nivo-gold-bright/80 transition hover:text-nivo-gold-bright"
+          >
+            {OFFICIAL_TOKEN.ca}
+          </a>
         </div>
         <div className="grid grid-cols-3 gap-6 text-sm">
           {GROUPS.map((group) => (

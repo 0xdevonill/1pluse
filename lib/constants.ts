@@ -10,6 +10,18 @@ export const LINKS = {
   community: "https://x.com/NivoFamily",
 } as const;
 
+export const OFFICIAL_TOKEN = {
+  name: "Nivo Family",
+  ticker: "$NIVO",
+  symbol: "NIVO",
+  ca: "0x125c9166fdE8BA901f33EaCEDF780D55A79D2E15",
+  chain: "Robinhood Chain",
+  poolFee: 0.01,
+  creatorShare: 0.7,
+  explorer: "https://robinhoodchain.blockscout.com/token/0x125c9166fdE8BA901f33EaCEDF780D55A79D2E15",
+  gecko: "https://www.geckoterminal.com/robinhood/tokens/0x125c9166fde8ba901f33eacedf780d55a79d2e15",
+} as const;
+
 export const NAV_ITEMS = [
   { href: "#how-it-works", label: "How It Works" },
   { href: "#creators", label: "Creators" },
